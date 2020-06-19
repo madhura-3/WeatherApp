@@ -51,3 +51,15 @@ main{
 	align-items: center;
 	text-align: center;
 }
+
+.location .city{
+	color: #FFF;
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.location .date{
+	color: #FFF;
+	font-size: 16px;
+}
