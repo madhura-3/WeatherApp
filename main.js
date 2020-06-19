@@ -7,9 +7,9 @@ const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
 function setQuery(evt) {
-	if (evt.keyCode == 13){
-		getResults(searchbox.value);
-	}
+    if (evt.keyCode == 13) {
+        getResults(searchbox.value);
+    }
 }
 
 function getResults(query) {
@@ -19,7 +19,7 @@ function getResults(query) {
         }).then(displayResults);
 }
 
-function displayResults(weather){
+function displayResults(weather) {
     let city = document.querySelector('.location .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
@@ -34,7 +34,7 @@ function displayResults(weather){
     weather_el.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('.hi-low');
-    hilow.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+    hilow.innerText = `${Math.round(weather.main.temp_min)} °c / ${Math.round(weather.main.temp_max)}°c`;
 }
 
 function dateBuilder(d) {
