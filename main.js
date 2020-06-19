@@ -28,7 +28,7 @@ function displayResults(weather) {
     date.innerText = dateBuilder(now);
 
     let temp = document.querySelector('.current .temp');
-    temp.innerHTML = `${weather.main.temp}<span>&#8451;</span>`;
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>&#8451;</span>`;
 
     let weather_el = document.querySelector('.current .weather');
     weather_el.innerText = weather.weather[0].main;
