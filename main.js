@@ -4,3 +4,4 @@ const api = {
 }
 
 const searchbox = document.querySelector('.search-box');
+searchbox.addEventListner('keypress', setQuery);
