@@ -9,6 +9,7 @@ searchbox.addEventListner('keypress', setQuery);
 function setQuery(evt) {
 	if (evt.keyCode == 13){
 		getResults(searchbox.value);
+		console.log(searchbox.value);
 	}
 }
 
@@ -19,3 +20,6 @@ function getResults(query){
 	}).then(displayResults);
 }
 
+function displayResults(weather){
+	console.log(weather);
+}
