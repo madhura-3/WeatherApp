@@ -11,3 +11,7 @@ function setQuery(evt) {
 		getResults(searchbox.value);
 	}
 }
+
+function getResults(query){
+	fetch('')
+}
